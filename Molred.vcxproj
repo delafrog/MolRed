@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C348D0B-F2BF-31EC-A201-BEC0473DCA27}</ProjectGuid>
+    <RootNamespace>Molred</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Molred</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Molred</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Molred</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Molred</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\..\..\Qt\Qt-5.15.0\include;..\..\..\Qt\Qt-5.15.0\include\QtHelp;..\..\..\Qt\Qt-5.15.0\include\QtOpenGL;..\..\..\Qt\Qt-5.15.0\include\QtWidgets;..\..\..\Qt\Qt-5.15.0\include\QtGui;..\..\..\Qt\Qt-5.15.0\include\QtANGLE;..\..\..\Qt\Qt-5.15.0\include\QtSql;..\..\..\Qt\Qt-5.15.0\include\QtCore;debug;..\..\..\VulkanSDK\1.2.148.1\include;..\..\..\Qt\Qt-5.15.0\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_HELP_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86\opengl32.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86\glu32.lib";glut32.lib;"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86\gdi32.lib";C:\Qt\Qt-5.15.0\lib\Qt5Helpd.lib;C:\Qt\Qt-5.15.0\lib\Qt5OpenGLd.lib;C:\Qt\Qt-5.15.0\lib\Qt5Widgetsd.lib;C:\Qt\Qt-5.15.0\lib\Qt5Guid.lib;C:\Qt\Qt-5.15.0\lib\Qt5Sqld.lib;C:\Qt\Qt-5.15.0\lib\Qt5Cored.lib;C:\Qt\Qt-5.15.0\lib\QtANGLEd.lib;gdi32.lib;user32.lib;C:\Qt\Qt-5.15.0\lib\qtmaind.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Molred.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_HELP_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;..\..\..\Qt\Qt-5.15.0\include;..\..\..\Qt\Qt-5.15.0\include\QtHelp;..\..\..\Qt\Qt-5.15.0\include\QtOpenGL;..\..\..\Qt\Qt-5.15.0\include\QtWidgets;..\..\..\Qt\Qt-5.15.0\include\QtGui;..\..\..\Qt\Qt-5.15.0\include\QtANGLE;..\..\..\Qt\Qt-5.15.0\include\QtSql;..\..\..\Qt\Qt-5.15.0\include\QtCore;release;..\..\..\VulkanSDK\1.2.148.1\include;..\..\..\Qt\Qt-5.15.0\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;QT_NO_DEBUG;QT_HELP_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86\opengl32.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86\glu32.lib";glut32.lib;"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86\gdi32.lib";C:\Qt\Qt-5.15.0\lib\Qt5Help.lib;C:\Qt\Qt-5.15.0\lib\Qt5OpenGL.lib;C:\Qt\Qt-5.15.0\lib\Qt5Widgets.lib;C:\Qt\Qt-5.15.0\lib\Qt5Gui.lib;C:\Qt\Qt-5.15.0\lib\Qt5Sql.lib;C:\Qt\Qt-5.15.0\lib\Qt5Core.lib;C:\Qt\Qt-5.15.0\lib\QtANGLE.lib;gdi32.lib;user32.lib;C:\Qt\Qt-5.15.0\lib\qtmain.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Molred.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;QT_NO_DEBUG;QT_HELP_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActualSpace.cpp" />
+    <ClCompile Include="FragmentBrowser.cpp" />
+    <ClCompile Include="GLframe.cpp" />
+    <ClCompile Include="MendeleevTable.cpp" />
+    <ClCompile Include="aminos.cpp" />
+    <ClCompile Include="datatypes.cpp" />
+    <ClCompile Include="editing.cpp" />
+    <ClCompile Include="graph.cpp" />
+    <ClCompile Include="helpBrowser.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="molbrowse.cpp" />
+    <ClCompile Include="rdwrfls.cpp" />
+    <ClCompile Include="rotat.cpp" />
+    <ClCompile Include="surface.cpp" />
+    <ClCompile Include="undoredo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ActualSpace.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ActualSpace.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" ActualSpace.h -o debug\moc_ActualSpace.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC ActualSpace.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_ActualSpace.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ActualSpace.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" ActualSpace.h -o release\moc_ActualSpace.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC ActualSpace.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_ActualSpace.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="FragmentBrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">FragmentBrowser.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" FragmentBrowser.h -o debug\moc_FragmentBrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC FragmentBrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_FragmentBrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">FragmentBrowser.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" FragmentBrowser.h -o release\moc_FragmentBrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC FragmentBrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_FragmentBrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GLframe.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GLframe.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" GLframe.h -o debug\moc_GLframe.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC GLframe.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_GLframe.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GLframe.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" GLframe.h -o release\moc_GLframe.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC GLframe.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_GLframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="MendeleevTable.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MendeleevTable.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" MendeleevTable.h -o debug\moc_MendeleevTable.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC MendeleevTable.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_MendeleevTable.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MendeleevTable.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" MendeleevTable.h -o release\moc_MendeleevTable.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC MendeleevTable.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_MendeleevTable.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="MeshCreator.h" />
+    <ClInclude Include="MeshCreatorcpp.h" />
+    <ClInclude Include="Trimesh.h" />
+    <ClInclude Include="Trimeshcpp.h" />
+    <ClInclude Include="aminos.h" />
+    <ClInclude Include="atom.h" />
+    <ClInclude Include="datatypes.h" />
+    <ClInclude Include="editing.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="graph.h" />
+    <CustomBuild Include="helpBrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">helpBrowser.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" helpBrowser.h -o debug\moc_helpBrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC helpBrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_helpBrowser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">helpBrowser.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" helpBrowser.h -o release\moc_helpBrowser.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC helpBrowser.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_helpBrowser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="init.h" />
+    <ClInclude Include="linalg.h" />
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mainwindow.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mainwindow.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="massiv.h" />
+    <ClInclude Include="massivcpp.h" />
+    <ClInclude Include="mlstrct.h" />
+    <CustomBuild Include="molbrowse.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">molbrowse.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" molbrowse.h -o debug\moc_molbrowse.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC molbrowse.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_molbrowse.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">molbrowse.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" molbrowse.h -o release\moc_molbrowse.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC molbrowse.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_molbrowse.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="rdfls.h" />
+    <ClInclude Include="rdflscpp.h" />
+    <ClInclude Include="rdwrfls.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rolling.h" />
+    <ClInclude Include="rollingcpp.h" />
+    <CustomBuild Include="rotat.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rotat.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" rotat.h -o debug\moc_rotat.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC rotat.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_rotat.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rotat.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" rotat.h -o release\moc_rotat.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC rotat.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_rotat.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="statwid.h" />
+    <ClInclude Include="surface.h" />
+    <CustomBuild Include="undoredo.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">undoredo.h;debug\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/debug/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" undoredo.h -o debug\moc_undoredo.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC undoredo.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_undoredo.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">undoredo.h;release\moc_predefs.h;C:\Qt\Qt-5.15.0\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rem IncrediBuild_AllowRemote 
+Rem IncrediBuild_OutputFile moc_header.output 
+C:\Qt\Qt-5.15.0\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DNDEBUG -DQT_NO_DEBUG -DQT_HELP_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/Work/CppPrjcts/MolRed/release/moc_predefs.h -IC:/Qt/Qt-5.15.0/mkspecs/win32-msvc -IC:/Work/CppPrjcts/MolRed -IC:/Work/CppPrjcts/MolRed -IC:/Qt/Qt-5.15.0/include -IC:/Qt/Qt-5.15.0/include/QtHelp -IC:/Qt/Qt-5.15.0/include/QtOpenGL -IC:/Qt/Qt-5.15.0/include/QtWidgets -IC:/Qt/Qt-5.15.0/include/QtGui -IC:/Qt/Qt-5.15.0/include/QtANGLE -IC:/Qt/Qt-5.15.0/include/QtSql -IC:/Qt/Qt-5.15.0/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" undoredo.h -o release\moc_undoredo.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC undoredo.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_undoredo.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="useract.h" />
+    <ClInclude Include="volume.h" />
+    <ClInclude Include="volumecpp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_ActualSpace.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_ActualSpace.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_FragmentBrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_FragmentBrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_GLframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_GLframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_MendeleevTable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_MendeleevTable.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_helpBrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_helpBrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_molbrowse.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_molbrowse.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\Qt\Qt-5.15.0\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -BxC:\Qt\Qt-5.15.0\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\Qt\Qt-5.15.0\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\Qt\Qt-5.15.0\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -BxC:\Qt\Qt-5.15.0\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\Qt\Qt-5.15.0\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_rotat.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_rotat.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_undoredo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_undoredo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_MolRed.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_MolRed.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MolRed.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MolRed.qrc;C:\Qt\Qt-5.15.0\bin\rcc.exe;MolRed.rc;images\narr.png;images\open.png;images\actcube.png;images\unch.png;images\undo.png;images\undoredo.png;images\ch.png;images\surf.png;images\paste.png;images\delete.png;images\turn.png;images\copy.png;images\unimol.png;images\persp.png;images\bond1.png;images\sepmol.png;images\invsel1.png;images\icon.png;images\selmol.png;images\atom.png;images\merge.png;images\save.png;images\fragm1.png;images\redo.png;images\cut.png;images\new.png;images\ortho.png;images\frame.png;images\mr3.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt-5.15.0\bin\rcc.exe -name MolRed MolRed.qrc -o debug\qrc_MolRed.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC MolRed.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qrc_MolRed.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MolRed.qrc;C:\Qt\Qt-5.15.0\bin\rcc.exe;MolRed.rc;images\narr.png;images\open.png;images\actcube.png;images\unch.png;images\undo.png;images\undoredo.png;images\ch.png;images\surf.png;images\paste.png;images\delete.png;images\turn.png;images\copy.png;images\unimol.png;images\persp.png;images\bond1.png;images\sepmol.png;images\invsel1.png;images\icon.png;images\selmol.png;images\atom.png;images\merge.png;images\save.png;images\fragm1.png;images\redo.png;images\cut.png;images\new.png;images\ortho.png;images\frame.png;images\mr3.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt-5.15.0\bin\rcc.exe -name MolRed MolRed.qrc -o release\qrc_MolRed.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC MolRed.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qrc_MolRed.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="MolRed.rc" />
+    <None Include="images\actcube.png" />
+    <None Include="images\atom.png" />
+    <None Include="images\bond1.png" />
+    <None Include="images\ch.png" />
+    <None Include="images\copy.png" />
+    <None Include="images\cut.png" />
+    <None Include="images\delete.png" />
+    <None Include="images\fragm1.png" />
+    <None Include="images\frame.png" />
+    <None Include="images\icon.png" />
+    <None Include="images\invsel1.png" />
+    <None Include="images\merge.png" />
+    <None Include="images\mr3.png" />
+    <None Include="images\narr.png" />
+    <None Include="images\new.png" />
+    <None Include="images\open.png" />
+    <None Include="images\ortho.png" />
+    <None Include="images\paste.png" />
+    <None Include="images\persp.png" />
+    <None Include="images\redo.png" />
+    <None Include="images\save.png" />
+    <None Include="images\selmol.png" />
+    <None Include="images\sepmol.png" />
+    <None Include="images\surf.png" />
+    <None Include="images\turn.png" />
+    <None Include="images\unch.png" />
+    <None Include="images\undo.png" />
+    <None Include="images\undoredo.png" />
+    <None Include="images\unimol.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

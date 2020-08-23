@@ -1,0 +1,3 @@
+Settings for Molred 
+
+Current dir : C:/Work/CppPrjcts/MolRed/amns

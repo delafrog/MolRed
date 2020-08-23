@@ -1,0 +1,34 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>images/actcube.png</file>
+	<file>images/icon.png</file>
+	<file>images/save.png</file>
+	<file>images/paste.png</file>
+	<file>images/open.png</file>
+	<file>images/merge.png</file>
+	<file>images/new.png</file>
+	<file>images/cut.png</file>
+	<file>images/copy.png</file>
+	<file>images/undo.png</file>
+	<file>images/redo.png</file>
+	<file>images/undoredo.png</file>	
+	<file>images/frame.png</file>
+	<file>images/fragm1.png</file>
+	<file>images/surf.png</file>
+	<file>images/narr.png</file>
+	<file>images/atom.png</file>
+	<file>images/mr3.png</file>
+	<file>images/bond1.png</file>
+	<file>images/sepmol.png</file>
+	<file>images/unimol.png</file>
+	<file>images/selmol.png</file>
+	<file>images/delete.png</file>
+	<file>images/persp.png</file>
+	<file>images/ortho.png</file>
+	<file>images/ch.png</file>
+	<file>images/unch.png</file>
+	<file>images/turn.png</file>
+	<file>images/invsel1.png</file>
+  <file>MolRed.rc</file>
+</qresource>
+</RCC>
